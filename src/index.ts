@@ -20,6 +20,9 @@ export type { KeycardSig } from "./keycard";
 export {
   createKeycardSession, addressForPub,
 } from "./session";
+export {
+  domainToSignPath, domainToKeyPath, domainToIndices,
+} from "./paths";
 export type {
   KeycardSession, KeycardSessionOpts, KeycardEnrollment, KeycardSignResult, KCState,
 } from "./session";

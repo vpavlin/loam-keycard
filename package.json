@@ -1,6 +1,6 @@
 {
   "name": "loam-keycard",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A Status Keycard as a Loam signing identity — raw NFC driver + enrollment/session custody. Sibling to loam-transport / loam-sync.",
   "keywords": ["loam", "logos", "keycard", "status", "secp256k1", "signer", "identity", "react-native"],
   "license": "MIT",
