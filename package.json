@@ -1,15 +1,32 @@
 {
   "name": "loam-keycard",
-  "version": "0.2.0",
-  "description": "A Status Keycard as a Loam signing identity — raw NFC driver + enrollment/session custody. Sibling to loam-transport / loam-sync.",
-  "keywords": ["loam", "logos", "keycard", "status", "secp256k1", "signer", "identity", "react-native"],
+  "version": "0.3.0",
+  "description": "A Status Keycard as a Loam signing identity \u2014 raw NFC driver + enrollment/session custody. Sibling to loam-transport / loam-sync.",
+  "keywords": [
+    "loam",
+    "logos",
+    "keycard",
+    "status",
+    "secp256k1",
+    "signer",
+    "identity",
+    "react-native"
+  ],
   "license": "MIT",
   "author": "vpavlin <vaclav@status.im>",
-  "repository": { "type": "git", "url": "https://github.com/vpavlin/loam-keycard" },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vpavlin/loam-keycard"
+  },
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist", "src", "README.md", "LICENSE"],
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit"
@@ -19,9 +36,15 @@
     "@noble/hashes": "^1.8.0",
     "expo-secure-store": "*",
     "keycard-sdk": "^3.1.9",
-    "react-native-keycard": "^1.0.4"
+    "react-native-keycard": "^1.0.4",
+    "react": "*",
+    "react-native": "*",
+    "expo-crypto": "*",
+    "@react-native-async-storage/async-storage": "*"
   },
   "peerDependenciesMeta": {
-    "expo-secure-store": { "optional": false }
+    "expo-secure-store": {
+      "optional": false
+    }
   }
 }

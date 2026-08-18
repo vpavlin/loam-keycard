@@ -18,8 +18,19 @@ export {
 } from "./keycard";
 export type { KeycardSig } from "./keycard";
 export {
-  createKeycardSession, addressForPub,
+  createKeycardSession, addressForPub, keycardAsyncSigner,
 } from "./session";
+export type { KeycardAsyncSigner } from "./session";
+export {
+  createIdentityRegistry,
+} from "./identity";
+export type {
+  IdentityRegistry, IdentityRegistryOpts, IdentityMeta, IdKind, SoftKey, SoftKeySeam, KeycardIdentitySeam,
+} from "./identity";
+export {
+  KeycardPinGate, KeycardTapOverlay, KeycardEnrollModal, defaultKeycardTheme,
+} from "./ui";
+export type { KeycardUIController, KeycardTheme } from "./ui";
 export {
   domainToSignPath, domainToKeyPath, domainToIndices,
 } from "./paths";
