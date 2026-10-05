@@ -37,3 +37,4 @@ export {
 export type {
   KeycardSession, KeycardSessionOpts, KeycardEnrollment, KeycardSignResult, KCState,
 } from "./session";
+export * from "./hd";
