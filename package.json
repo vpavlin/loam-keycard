@@ -1,7 +1,7 @@
 {
   "name": "loam-keycard",
   "version": "0.3.0",
-  "description": "A Status Keycard as a Loam signing identity \u2014 raw NFC driver + enrollment/session custody. Sibling to loam-transport / loam-sync.",
+  "description": "A Status Keycard as a Loam signing identity — raw NFC driver + enrollment/session custody. Sibling to loam-transport / loam-sync.",
   "keywords": [
     "loam",
     "logos",
@@ -29,22 +29,31 @@
   ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "typecheck": "tsc -p tsconfig.json --noEmit"
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --experimental-strip-types --test test/*.test.ts"
   },
   "peerDependencies": {
     "@noble/curves": "^1.9.0 || ^2.0.0",
     "@noble/hashes": "^1.8.0",
+    "@react-native-async-storage/async-storage": "*",
+    "expo-crypto": "*",
     "expo-secure-store": "*",
     "keycard-sdk": "^3.1.9",
-    "react-native-keycard": "^1.0.4",
     "react": "*",
     "react-native": "*",
-    "expo-crypto": "*",
-    "@react-native-async-storage/async-storage": "*"
+    "react-native-keycard": "^1.0.4",
+    "@scure/bip32": "^1.7.0 || ^2.0.0",
+    "@scure/bip39": "^1.6.0 || ^2.0.0"
   },
   "peerDependenciesMeta": {
     "expo-secure-store": {
       "optional": false
     }
+  },
+  "devDependencies": {
+    "@noble/curves": "^1.9.7",
+    "@noble/hashes": "^1.8.0",
+    "@scure/bip32": "^1.7.0",
+    "@scure/bip39": "^1.6.0"
   }
 }
